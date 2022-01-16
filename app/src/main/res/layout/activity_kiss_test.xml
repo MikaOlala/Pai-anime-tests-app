@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darkViola">
+
+    <LinearLayout
+        android:id="@+id/cards"
+        android:layout_width="wrap_content"
+        android:layout_height="573sp"
+
+        android:layout_marginTop="23sp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="368sp"
+            android:layout_height="184sp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/one"
+                android:layout_width="368sp"
+                android:layout_height="184sp"
+                android:layout_marginBottom="10sp"
+
+                android:onClick="picClick"
+                android:src="@drawable/pic_example_mini"
+                app:riv_corner_radius="30sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/oneIcon"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:src="@drawable/lips3"
+
+                android:visibility="invisible"
+                android:layout_margin="10sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="368sp"
+            android:layout_height="184sp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/two"
+                android:layout_width="368sp"
+                android:layout_height="184sp"
+                android:layout_marginBottom="10sp"
+
+                android:onClick="picClick"
+                android:src="@drawable/pic_example_mini"
+                app:riv_corner_radius="30sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:id="@+id/twoIcon"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:src="@drawable/lips3"
+
+                android:visibility="invisible"
+                android:layout_margin="10sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="368sp"
+            android:layout_height="184sp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/three"
+                android:layout_width="368sp"
+                android:layout_height="184sp"
+                android:layout_marginBottom="10sp"
+
+                android:onClick="picClick"
+                android:src="@drawable/pic_example_mini"
+                app:riv_corner_radius="30sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+                <ImageView
+                    android:id="@+id/threeIcon"
+                    android:layout_width="90sp"
+                    android:layout_height="90sp"
+                    android:src="@drawable/lips3"
+
+                    android:visibility="invisible"
+                    android:layout_margin="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cards">
+
+
+        <android.widget.Button
+            android:id="@+id/kissSkip"
+            style="@style/button_kiss_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_kiss"
+            android:layout_marginEnd="23sp"
+            android:layout_marginRight="23sp"
+
+            android:text="@string/skip_test" />
+
+        <android.widget.Button
+            android:id="@+id/kissConfirm"
+            style="@style/button_kiss_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_kiss_confirm"
+            android:paddingHorizontal="20sp"
+
+            android:text="@string/confirm_test" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

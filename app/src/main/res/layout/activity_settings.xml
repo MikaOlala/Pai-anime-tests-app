@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="@color/darkViola">
+
+    <TextView
+        android:id="@+id/settingsText"
+        style="@style/textViola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="40sp"
+        android:textColor="@color/backSarah"
+        android:layout_marginTop="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/resetAnimeTest"
+        android:layout_width="260sp"
+        android:layout_height="wrap_content"
+        android:text="Reset Anime Test"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shadow_wrong"
+
+        android:layout_marginTop="52sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsText"/>
+
+    <android.widget.Button
+        android:id="@+id/resetKissTest"
+        android:layout_width="260sp"
+        android:layout_height="wrap_content"
+        android:text="Reset Kiss/Marry/Kill"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shadow_wrong"
+
+        android:layout_marginTop="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetAnimeTest"/>
+
+
+    <RelativeLayout
+        android:id="@+id/addAnimeTest"
+        android:layout_width="327sp"
+        android:layout_height="70sp"
+
+        android:layout_marginTop="52sp"
+        android:background="@drawable/settings_back"
+        app:layout_constraintTop_toBottomOf="@+id/resetKissTest"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/gear_dark"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginVertical="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_add_anime"
+            android:textSize="20sp"
+            android:textColor="@color/darkViola"
+
+            android:padding="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addKissTest"
+        android:layout_width="327sp"
+        android:layout_height="70sp"
+
+        android:layout_marginTop="23sp"
+        android:background="@drawable/settings_back"
+        app:layout_constraintTop_toBottomOf="@+id/addAnimeTest"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/gear_dark"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginVertical="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_add_kiss"
+            android:textSize="16sp"
+            android:textColor="@color/darkViola"
+
+            android:padding="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="16sp"
+        android:layout_marginRight="16sp"
+        android:layout_marginBottom="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/skip_test"
+            android:layout_width="95sp"
+            android:layout_height="44sp"
+
+            android:src="@drawable/next_button" />
+
+        <TextView
+            android:id="@+id/textSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/backSarah"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12sp"
+            android:layout_marginLeft="12sp"
+            android:text="@string/back_test"
+            />
+    </RelativeLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/gear"-->
+<!--        android:layout_width="40sp"-->
+<!--        android:layout_height="40sp"-->
+<!--        android:src="@drawable/gear"-->
+<!--        android:layout_margin="40sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        />-->
+<!--    <ImageView-->
+<!--        android:id="@+id/gearToKiss"-->
+<!--        android:layout_width="40sp"-->
+<!--        android:layout_height="40sp"-->
+<!--        android:src="@drawable/gear"-->
+<!--        android:layout_margin="40sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/gear"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

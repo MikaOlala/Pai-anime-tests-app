@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "36048124086",
+    "firebase_url": "https://paiimages-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "paiimages",
+    "storage_bucket": "paiimages.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36048124086:android:4061a9db11f77cbf338e17",
+        "android_client_info": {
+          "package_name": "com.example.pai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36048124086-ctb3c4evooeo7of57v1istdptscti6f8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqcGEtwGktmg0oP94cM7wdPeI5oNI4lXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36048124086-ctb3c4evooeo7of57v1istdptscti6f8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

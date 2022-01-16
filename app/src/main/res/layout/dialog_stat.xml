@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backSarah">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/votersBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/total_voters"/>
+        <TextView
+            android:id="@+id/voteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="28sp"
+            android:textColor="@color/darkViola"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_centerVertical="true"
+           />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/statistic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/banner">
+
+        <RelativeLayout
+            android:layout_width="300sp"
+            android:layout_height="180sp"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleStatOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pic_example_circle"
+
+                android:padding="46sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true" />
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/firstCharacter"
+                android:layout_width="300sp"
+                android:layout_height="180sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300sp"
+            android:layout_height="180sp"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleStatTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pic_example_circle"
+
+                android:padding="46sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true" />
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/secondCharacter"
+                android:layout_width="300sp"
+                android:layout_height="180sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300sp"
+            android:layout_height="180sp"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleStatTh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pic_example_circle"
+
+                android:padding="46sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true" />
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/thirdCharacter"
+                android:layout_width="300sp"
+                android:layout_height="180sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancelStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginVertical="10sp"
+        android:layout_marginRight="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statistic">
+
+        <ImageView
+            android:id="@+id/skip_test"
+            android:layout_width="95sp"
+            android:layout_height="44sp"
+
+            android:src="@drawable/next_button" />
+
+        <TextView
+            android:id="@+id/textSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/backSarah"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12sp"
+            android:layout_marginLeft="12sp"
+            android:text="@string/next_button"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

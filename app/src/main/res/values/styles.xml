@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textViola">
+        <item name="android:fontFamily">@font/gloria_hallelujah</item>
+    </style>
+
+    <style name="button_test">
+        <item name="android:layout_width">368sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/gloria_hallelujah</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginBottom">8sp</item>
+        <item name="android:textColor">@color/backSarah</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_shadow</item>
+    </style>
+
+    <style name="button_kiss_test">
+        <item name="android:fontFamily">@font/gloria_hallelujah</item>
+        <item name="android:textColor">@color/darkViola</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">27sp</item>
+    </style>
+
+    <style name="textMenu">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="fontFamily">@font/gloria_hallelujah</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">16sp</item>
+        <item name="android:shadowColor">@color/darkViola</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">1.5</item>
+        <item name="android:shadowDy">1.5</item>
+    </style>
+    <style name="menuPictures">
+        <item name="android:layout_width">370sp</item>
+        <item name="android:layout_height">162sp</item>
+<!--        <item name="android:layout_weight">1</item>-->
+    </style>
+    <style name="squares">
+        <item name="android:layout_width">50sp</item>
+        <item name="android:layout_height">50sp</item>
+        <item name="android:padding">4sp</item>
+<!--        <item name="android:paddingRight">7sp</item>-->
+<!--        <item name="android:paddingLeft">7sp</item>-->
+    </style>
+    <style name="radioMaker">
+        <item name="android:layout_width">100sp</item>
+        <item name="android:layout_height">108sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">10sp</item>
+        <item name="android:layout_marginLeft">10sp</item>
+
+    </style>
+</resources>

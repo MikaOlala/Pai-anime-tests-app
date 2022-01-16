@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backSarah"
+    tools:context=".AnimeTest">
+
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/picTest"
+            android:layout_width="match_parent"
+            android:layout_height="402sp"
+            android:src="@drawable/pic_example"
+
+            app:riv_corner_radius_bottom_left="30sp"
+            app:riv_corner_radius_bottom_right="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginRight="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/skip_test"
+            android:layout_width="95sp"
+            android:layout_height="44sp"
+
+            android:src="@drawable/skip_button" />
+
+        <TextView
+            android:id="@+id/textSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/backSarah"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12sp"
+            android:layout_marginLeft="12sp"
+            android:text="@string/skip_test"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="@string/whatAnime"
+        android:textColor="@color/eyeKiller"
+        android:textSize="23sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picTest" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="240sp"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.widget.Button
+            android:id="@+id/button_test_first"
+            style="@style/button_test"
+            android:onClick="choice"
+            android:text="@string/button_test_first" />
+
+        <android.widget.Button
+            android:id="@+id/button_test_second"
+            style="@style/button_test"
+            android:onClick="choice"
+            android:text="@string/button_test_second" />
+
+        <android.widget.Button
+            android:id="@+id/button_test_third"
+            style="@style/button_test"
+            android:onClick="choice"
+            android:text="@string/button_test_third" />
+
+        <android.widget.Button
+            android:id="@+id/button_test_fourth"
+            style="@style/button_test"
+            android:onClick="choice"
+            android:text="@string/button_test_fourth" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

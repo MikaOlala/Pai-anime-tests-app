@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Pai</string>
+    <string name="appName">PAI!!!</string>
+    <string name="textUnderPAI">anime tests</string>
+
+    <string name="whatAnime">WHAT ANIME IS THIS?</string>
+    <string name="guessText">guess the anime</string>
+    <string name="button_test_first">Howl\'s Moving Castle</string>
+    <string name="button_test_second">The Wind Rises</string>
+    <string name="button_test_third">Omoide no Marnie</string>
+    <string name="button_test_fourth">The Tale of the Princess Kaguya</string>
+    <string name="skip_test">Skip</string>
+    <string name="kissText">kiss/marry/kill</string>
+    <string name="makerText">avatar maker</string>
+    <string name="confirm_test">Confirm</string>
+    <string name="back_test">Back</string>
+    <string name="settings">Settings</string>
+    <string name="user_name_example">User</string>
+    <string name="gender_question">Your Gender:</string>
+    <string name="name_question">Your name:</string>
+    <string name="male_radio">Male</string>
+    <string name="female_radio">Female</string>
+    <string name="unchecked_radio">Unchecked</string>
+    <string name="save_button_settings">Save</string>
+    <string name="explanation_anime_test">Add new question for Anime Test</string>
+    <string name="first_answer_example">First answer</string>
+    <string name="second_answer_example">Second answer</string>
+    <string name="third_answer_example">Third answer</string>
+    <string name="fourth_answer_example">Fourth answer</string>
+    <string name="add_question_button">Add Question</string>
+    <string name="text_radio_question">Which one is the correct answer?</string>
+    <string name="your_score_text">Your Score:</string>
+    <string name="your_score_example_text">10/10!!</string>
+    <string name="go_to_menu_button_text">Go to menu</string>
+    <string name="anime_title_example">Anime title</string>
+    <string name="character_name_example">Character Name</string>
+    <string name="save_button">save</string>
+    <string name="next_button">Next</string>
+    <string name="cheers">Cheers!</string>
+    <string name="settings_add_anime">Add question for test</string>
+    <string name="settings_add_kiss">Add round for kiss/marry/kill</string>
+
+    <string-array name="flavor">
+        <item>strawberry</item>
+        <item>cherry</item>
+        <item>apple</item>
+    </string-array>
+</resources>

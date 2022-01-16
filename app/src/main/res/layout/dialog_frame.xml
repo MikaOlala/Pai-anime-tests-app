@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="368sp"
+    android:layout_height="420sp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_back"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        android:onClick="layoutClick"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="184sp"
+
+            android:src="@drawable/pic_example_mini"
+            app:riv_corner_radius_top_left="30sp"
+            app:riv_corner_radius_top_right="30sp" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boa Hancock"
+            android:textColor="@color/darkViola"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textAnime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="One Piece"
+            android:textColor="@color/darkViola"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstLayout">
+
+        <ImageView
+            android:id="@+id/buttonKiss"
+            android:layout_width="0sp"
+            android:layout_height="110sp"
+            android:layout_weight="1"
+            android:src="@drawable/lips3"
+            android:onClick="buttonClick" />
+
+        <ImageView
+            android:id="@+id/buttonMarry"
+            android:layout_width="0sp"
+            android:layout_height="110sp"
+            android:layout_weight="1"
+            android:src="@drawable/ring3"
+            android:onClick="buttonClick"/>
+
+        <ImageView
+            android:id="@+id/buttonKill"
+            android:layout_width="0sp"
+            android:layout_height="110sp"
+            android:layout_weight="1"
+            android:src="@drawable/skull3"
+            android:onClick="buttonClick"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimeTestResult"
+    android:background="@color/darkViola"
+    android:orientation="vertical"
+    android:paddingVertical="50sp"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/emoji" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/your_score_text"
+        android:textColor="@color/lightViola"
+        android:textSize="30sp"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_score_example_text"
+        android:gravity="center"
+        android:textColor="@color/lightViola"
+        android:textSize="50sp"
+        android:paddingHorizontal="30sp"
+        android:layout_marginTop="-20sp"/>
+
+    <android.widget.Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:background="@drawable/button_kiss"
+        android:text="@string/go_to_menu_button_text"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:paddingHorizontal="20sp"
+        android:layout_marginTop="40sp"
+        />
+
+</LinearLayout>

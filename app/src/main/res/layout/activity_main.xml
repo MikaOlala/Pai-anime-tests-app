@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backSarah"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gear"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@drawable/gear"
+        android:layout_margin="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appName"
+        android:layout_width="220dp"
+        android:layout_height="144dp"
+
+        android:layout_marginTop="23sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="67dp"
+            android:layout_height="53dp"
+
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/pie"
+            app:layout_constraintBottom_toTopOf="@+id/textUnderPAI"
+            app:layout_constraintEnd_toStartOf="@+id/textPAI"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textPAI"
+            style="@style/textViola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="@string/appName"
+            android:textColor="@color/lightViola"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textUnderPAI"
+            style="@style/textViola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textUnderPAI"
+            android:textColor="@color/lightViola"
+            android:textSize="31sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/menuBlocks"
+        android:layout_width="wrap_content"
+        android:layout_height="507sp"
+        android:orientation="vertical"
+
+        android:layout_marginTop="172sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/menuGuess"
+                style="@style/menuPictures"
+                android:src="@drawable/guess"
+                app:riv_corner_radius="30sp"/>
+
+            <TextView
+                style="@style/textMenu"
+                android:text="@string/guessText"
+                android:textColor="@color/darkGven"
+
+                android:layout_alignEnd="@+id/menuGuess"
+                android:layout_alignRight="@+id/menuGuess"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/menuKiss"
+                style="@style/menuPictures"
+                android:src="@drawable/kiss"
+                app:riv_corner_radius="30sp"
+                />
+            <TextView
+                style="@style/textMenu"
+                android:text="@string/kissText"
+                android:textColor="@color/pinkySarah"
+                android:layout_alignEnd="@+id/menuKiss"
+                android:layout_alignRight="@+id/menuKiss"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/menuMaker"
+                style="@style/menuPictures"
+                android:src="@drawable/maker"
+                app:riv_corner_radius="30sp"
+                />
+            <TextView
+                style="@style/textMenu"
+                android:text="@string/makerText"
+                android:textColor="#9AEDED"
+                android:layout_alignEnd="@+id/menuMaker"
+                android:layout_alignRight="@+id/menuMaker"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
